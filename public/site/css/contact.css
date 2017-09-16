@@ -1,0 +1,74 @@
+#contactInput{
+    padding-left: 0;
+}
+#contact-description{
+    padding-right: 0;
+}
+
+#contactInput #contactTitle{
+    color: #666666;
+    font-weight: 100;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.contact-alert{
+    line-height: 23px;
+    color: firebrick;
+}
+
+.control-label{
+    margin-bottom: 10px;
+    color: #666666;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+.input-group-addon{
+    background-color: #DE5347;
+    color: #ffffff;
+    border: none !important;
+    border-radius: 0 !important;
+}
+textarea{
+    height: 200px !important;
+}
+
+#btnContact{
+    background-color: #DE5347;
+}
+
+#contact-description p{
+    text-align: justify;
+}
+
+#contact-description h3{
+    font-weight: 700;
+}
+
+.contact-add{
+    clear: both;
+}
+.contact-add i{
+    font-size: 25px;
+    color: #DE5347;
+    margin-right: 5px;
+    float: left;
+    width: 30px;
+    display: block;
+}
+
+.contact-add p{
+    float: left;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 425px){
+    #contact-description{
+        padding-left: 0;
+    }
+    #contactInput{
+        padding-right: 0;
+    }
+}

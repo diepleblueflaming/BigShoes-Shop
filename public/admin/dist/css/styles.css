@@ -1,0 +1,68 @@
+
+.error{
+    margin-top: 5px;
+    color: red;
+    font-size: 14px;
+}
+
+.req{
+    color: red;
+}
+
+.tree_view{
+    list-style: none;
+}
+
+.tree_view  ul{
+    list-style: none;
+}
+
+.list_action{
+    position: relative;
+    float: right;
+    bottom: 7px;
+}
+
+.separate{
+    margin: 0 5px;
+}
+
+label.p_label{
+    width: 100px;
+    text-align: right;
+    margin-right: 25px;
+}
+
+#search_product{
+   visibility: hidden;
+}
+
+.display_color{
+    width: 6%;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    position: absolute;
+}
+
+th.sorting_asc,th.sorting_des{
+    cursor: pointer;
+    position: relative;
+}
+
+th.sorting_asc:after{
+    content: "\e156";
+}
+
+th.sorting_des:after{
+    content: "\e155";
+}
+
+.sorting_asc:after,.sorting_des:after{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: block;
+    font-family: 'Glyphicons Halflings';
+    opacity: 0.5;
+}

@@ -1,0 +1,126 @@
+a:active, a:visited,a:link{
+    text-decoration: none;
+}
+
+#session-left{
+    padding-left: 0;
+}
+
+#article-right{
+    padding-right: 0;
+}
+
+#nav-left-title,.filterPrice-title{
+    padding: 10px;
+    font-size: 17px;
+    background: #DE5347;
+    color: white;
+}
+
+.category .cat-title a{
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+}
+
+#nav-left-title i,.filterPrice-title i{
+    font-size: 20px;
+}
+
+#nav-left-title i,.category .cat-title a i{
+    transition: all 1s;
+    float: right;
+    margin: 4px;
+}
+
+.icon-rotate{
+    transform: rotate(45deg);
+}
+.sub-cat{
+    margin-left: 20px;
+}
+
+.sub-cat-item a{
+    display: block;
+    padding: 10px;
+}
+
+#filterPrice{
+    margin-top: 30px;
+}
+
+.filterPrice-from,.filterPrice-to{
+    overflow: hidden;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.price-label{
+    margin-top: 6px;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.filterPriceInput{
+    width: 60%;
+    float: right;
+}
+
+.item-container{
+    position: relative;
+}
+
+.item-img{
+    position: relative;
+    height: 300px;
+}
+
+.item-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.item{
+    margin-bottom: 30px;
+    padding: 0 !important;
+}
+
+.filter{
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+.filter form {
+    float: right;
+}
+
+#filterProduct{
+    border-radius: 0;
+    height: 38px;
+}
+
+.totalProduct{
+    color: white;
+    float: left;
+    font-size: 17px;
+    padding: 7px 20px;
+    margin: 0;
+    background-color: #DE5347
+}
+
+@media only screen and (max-width: 425px) {
+    #article-right{
+        padding-left: 0;
+    }
+
+    #session-left{
+        padding-right: 0;
+    }
+    #filterPrice{
+        margin-top: 0;
+    }
+    #according {
+        display: none;
+    }
+}

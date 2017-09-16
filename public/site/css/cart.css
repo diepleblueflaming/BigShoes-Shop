@@ -1,0 +1,249 @@
+
+body{
+    background-color: #f8f8f8;
+}
+.process{
+    text-align: center;
+}
+
+.process img{
+    width: 95%;
+    height: 55px;
+}
+
+#cart-main-content{
+    margin-top: 30px;
+}
+
+#cart-content{
+    clear: both;
+    overflow: hidden;
+    box-shadow: 0 13px 18px #dbdbdb;
+    margin: 30px 0;
+}
+
+#process{
+    margin-top: 30px;
+}
+
+#cart .img-thumb{
+    height: 100px;
+    width: 100px;
+}
+#cart #cart-content #cart-list{
+    overflow: hidden;
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+#cart #cart-content #cart-list .title{
+
+    padding: 10px;
+    font-size: 25px;
+    padding-left: 0;
+    font-weight: 700;
+}
+
+td,th{
+    text-align: center;
+    vertical-align: middle !important;
+}
+.table{
+    border: 1px solid #ddd ;
+}
+
+.table thead tr th{
+    font-size: 13px;
+}
+
+.table tbody tr td{
+    font-size: 15px;
+}
+
+#cart-list button[id^="btn"]:not(#btn-transaction-submit){
+    float: right;
+    width: 17%;
+    margin-right: 10px;
+}
+
+i[class*='fa-long-arrow-left']{
+    transition: all linear 0.5s;
+    position: absolute;
+    top: 8px;
+    font-size: 25px;
+    left: 20%;
+}
+
+button[id='btn-cart-back']:hover i[class*='fa-long-arrow-left']{
+    left: 0;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+    #cart-list button[id^="btn"]:not(#btn-transaction-submit){
+        width: 26%;
+    }
+}
+
+#cart-action{
+    margin-top: -10px;
+}
+
+tfoot td:first-child{
+    border-right: 1px solid #ddd;
+}
+
+.td-qty{
+    width: 50px;
+}
+
+.form-control{
+    margin: 10px 0;
+}
+
+.transaction-item-wrapper{
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 13px 18px #dbdbdb;
+    margin: 50px 0 30px 0;
+}
+
+
+.sub-item{
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.sub-item:nth-of-type(1){
+    margin-top: -20px;
+}
+.input-group-btn button{
+    margin-top: 10px;
+}
+
+#button-discount{
+    background-color:#DE5347;
+    outline: none;
+    color: #ffffff;
+}
+
+#btn-continue{
+    background-color: #006633;
+}
+
+.transaction-list-product-item img{
+    width: 100%;height: auto;
+}
+
+.transaction-list-product-item{
+    margin-bottom: 20px;
+    overflow: hidden;
+    clear: both;
+}
+
+.transaction-list-product-item div[class^='col']{
+    padding-left: 0;
+}
+
+.transaction-result{
+    padding: 7px 0;
+}
+.transaction-result b{
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+.label-text{
+    text-align: left;
+    padding: 5px 10px 5px 0;
+    float: left;
+    width: 100px;
+}
+
+.color,.size{
+    border: 1px solid #dfe0e4;
+    width: 30px;
+    float: left;
+    height: 30px;
+    cursor: pointer;
+}
+
+.size{
+    padding: 3px 0 0 5px;
+    font-weight: 600;
+}
+
+.td-content{
+    text-align: left;
+}
+
+.color_container,.size_container{
+    overflow: hidden;
+}
+
+.list_color,.list_size{
+    background-color: #ffffff;
+    display: none;
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    box-shadow: 0 13px 18px #dbdbdb;
+    position: absolute;
+    left: 33%;
+}
+
+.list_color span,.list_size span{
+    margin-right: 5px;
+}
+
+.alertError .message{
+    float: left;
+}
+
+.alertError .backToHome{
+    float: right;
+    font-size: 20px;
+    margin-top: 23px;
+}
+
+.orderAlertError{
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#btn-back{
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+#payments{
+    margin-top: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#payments img{
+    margin: 0 5px;
+    height: 50px;
+    width: 100px;
+}
+
+#payments img:first-child{
+    margin-left: 0;
+}
+@media only screen and (max-width: 425px) {
+    button[id^="btn"]{
+        float: none !important;
+        width: 100% !important;
+    }
+
+    .orderAlertError{
+        font-size: 22px;
+    }
+
+    #payments img{
+        width: 45%;
+    }
+}

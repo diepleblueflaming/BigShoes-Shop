@@ -1,0 +1,183 @@
+
+
+#login_register{
+    transition: all linear 0.5s;
+    opacity: 0;
+    transform: scale(0.3);
+    /*display: none;*/
+    width: 40%;
+    left: 30%;
+    position: fixed;
+    top: 20%;
+    z-index: 100000;
+}
+.showForm{
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #login_register{
+        width: 80%;
+        left: 10%;
+    }
+}
+
+#login_register ul{
+    background-color: transparent;
+}
+
+.nav-tabs{
+    border: none !important;
+}
+
+#login_register li.active, li.active a{
+    border-bottom: none !important;
+}
+
+#login_register li:first-child{
+    border-right: 1px solid #dfe0e4;
+}
+#login_register li a{
+    border:none;
+    border-bottom: 1px solid #dfe0e4;
+    border-radius: 0;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 40px;
+    color: #000000;
+    margin: 0;
+}
+
+div.tab-content{
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 35px;
+}
+
+#remember{
+    float: left;
+    margin-top: 13px;
+}
+
+#forget_password{
+    margin: 13px 10px 0px 10px;
+    float: right;
+}
+
+input[type='checkbox']{
+    margin: 3px 0 0;
+}
+
+#login #input_div{
+    padding-right: 15px;
+    float: left;
+    width: 60%;
+    border-right: 1px solid #dfe0e4;
+}
+
+#img_logo{
+    margin-left: 3%;
+    width: 37%;
+    margin-top: 60px;
+    float: right;
+}
+
+#register #input_div_left{
+    width: 49%;
+    padding-right: 20px;
+    border-right: 1px solid #dfe0e4;
+    float: left;
+}
+
+#register #input_div_right{
+    width: 45%;
+    float: right;
+}
+
+#success #btn-success-dashboard{
+    width: 50%;
+    margin-left: 0;
+}
+
+#forget_password_div .inputDiv{
+    float: left;
+    width: 50%;
+}
+
+#forget_password_div #loading{
+    text-align: justify;
+    display: none;
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 20px 0;
+    color: #002166;
+}
+
+#forget_password_div #loadingn .text{
+    margin-top: -10px;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 425px) {
+
+    #login_register{
+        top: 5%;
+        width: 90%;
+        left: 5%;
+    }
+
+    #register #input_div_right,#input_div_left{
+        float: left;
+        width: 100% !important;
+    }
+
+    #input_div_left{
+        padding: 0 !important;
+        margin-bottom: 15px !important;
+        border: none !important;
+    }
+
+    #login #input_div{
+        width: 100% !important;
+        padding: 0 !important;
+        border: none !important;
+    }
+
+    #success #btn-success-login{
+        width: 100%;
+    }
+}
+
+                    /** Css for profile form**/
+#profile div[class^="input-container"] {
+    display: none;
+}
+
+#profile #form-profile{
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+#profile label{
+    width: 230px;
+    font-size: 16px;
+}
+
+#profile a{
+    color: #0066cc;
+}
+
+h2{
+    color: #666666;
+    font-size: 4rem !important;
+}
+
+#profile div[id^='err']{
+    color: red;
+}

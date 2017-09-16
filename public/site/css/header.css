@@ -1,0 +1,390 @@
+
+/* style chung     */
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* tool-bar */
+#toolbar{
+    background-color: #ffffff;
+    color: #666666;
+    border-color: #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+}
+
+.top-left {
+    padding: 10px;
+}
+
+.top-right{
+    margin-top: 10px;
+}
+
+.top-right > ul.menu{
+    list-style: none;
+    float: right;
+}
+
+.top-right > ul.menu > li{
+    display: inline;
+    padding-right: 10px;
+    border-right: 1px solid #666666;
+    margin-right: 3px;
+    line-height: 11px;
+}
+
+.top-right >ul.menu :last-child{
+    border-right: none;
+    margin-right: 0;
+}
+
+.top-right >ul.menu >li > a{
+    color: #666666;
+}
+
+
+.top-right >ul.menu >li > a:hover{
+    color: #ff5959;
+    transition: all 0.5s;
+}
+
+
+/* end tool-bar */
+
+#top-logo{
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    #top-logo{
+        margin-top: 60px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* top navbar */
+#top-navbar a:link{
+    background-color: transparent;
+}
+#top-navbar{
+    float: right;
+}
+.navbar-default{
+    border: none;
+    background-color: transparent;
+}
+
+
+#top-navbar > ul > li > a ,.dropdown-menu > ul > li > a{
+    color: rgba(117,117,117,1);
+}
+
+#top-navbar > ul > li > a{
+    font-weight: 700;
+    font-family: Roboto Slab;
+    font-size: 17px !important;
+    padding: 15px 2px;
+    margin-right: 45px;
+}
+
+#top-navbar > ul > li > a:hover{
+    background-color: transparent;
+    color: #e25d29;
+}
+
+.navbar{
+    margin:16px 0;
+}
+
+.nav-top-fixed{
+    top: 0;
+    width: 100%;
+    z-index: 888;
+    position: fixed;
+    margin: 0 -15px;
+    background-color: white;
+}
+
+.nav-top-fixed #top-logo{
+    padding: 5px 0 0 0 !important;
+}
+
+.nav-top-fixed .navbar{
+    margin: 0 !important;
+}
+
+/* phan style cho menu con */
+.menu-dropdown{
+    display: block;
+    transition: all linear 0.5s;
+    position: absolute;
+    overflow: hidden;
+    left: -400px;
+    height: 0;
+    padding: 0 25px;
+    width: 810px;
+    background-color: #f2f2f2;
+    box-shadow: 0px 4px 13px -3px #808080;
+    z-index: 8888;
+    border-radius: 5px;
+}
+
+.menu-dropdown-item{
+    float: left;
+    margin-top: 10px;
+}
+
+.menu-dropdown-item ul{
+    padding: 0;
+    overflow:  hidden;
+}
+
+.menu-dropdown-item .menu-link{
+    display: block;
+    padding: 15px 0;
+    width: 250px;
+    font-weight: 700;
+}
+
+.menu-dropdown-item ul li a{
+    font-size: 13px;
+    padding: 10px 0;
+    width: 250px;
+    display: block;
+}
+
+.dropdown .dropdown-toggle i{
+    width: 15px;
+}
+
+.arrow{
+    position: absolute;
+    top: -19px;
+    left: 13px;
+    font-size: 1.5em;
+    color: #e25d29;
+}
+
+.dropdown:hover .menu-dropdown{
+    height: 200px;
+}
+
+/* phan form-search*/
+
+#form-search{
+    transition: all linear 0.5s;
+    z-index: 9999;
+    background: #ffffff;
+    overflow: hidden;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    height: 0;
+    width: 250px;
+    padding: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#form-search > .input-group > .input-group-btn > .btn{
+    padding: 9px 12px;
+}
+
+#search:hover #form-search{
+    padding: 25px;
+    height: auto;
+}
+
+/* phan responsive cho mobile*/
+
+/* phan quick view cart*/
+#quick-view-cart-container{
+    position: inherit !important;
+}
+#quick-view-cart{
+    transition: all ease-in-out 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 400px;
+    overflow-y: auto;
+    max-height: 550px;
+    right: 0;
+    top: 50px;
+    visibility: hidden;
+    opacity: 0;
+    padding: 15px;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 5555;
+}
+
+#quick-view-cart .img-container{
+    float: left;
+    height: 100%;
+    width: 35%;
+}
+
+#quick-view-cart img{
+    width: 100%;
+    height: 100%;
+}
+
+#quick-view-cart .content{
+    width: 60%;
+    float: left;
+    margin-left: 15px;
+    height: 100%;
+}
+
+#quick-view-cart .quick-view-cart-item{
+    transition: all ease-in-out 0.5s;
+    padding: 10px 0;
+    height: 150px;
+    overflow: hidden;
+    border-bottom: 1px solid #dfe0e4;
+}
+
+#quick-view-cart .quick-view-cart-item:last-child{
+    border-bottom: none;
+}
+
+#total-price{
+    float: right;
+    margin-top: 22px;
+}
+
+#btn-check-out{
+    transition: all 0.5s;
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+}
+
+#btn-check-out:hover {
+    background-color: #000000;
+}
+
+#quick-view-cart-container:hover #quick-view-cart{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* style cho phan menu mobile*/
+#mobile_menu{
+    position: fixed;
+    overflow: hidden;
+    padding: 5px 8px;
+    width: 100%;
+    z-index: 3;
+    background-color: #ff5959;
+}
+
+#mobile_search form, #mobile_login form{
+    margin-bottom: 0 !important;
+}
+
+#mobile_search button, #mobile_search input{
+    border-radius: 0 !important;
+    background-color: transparent; !important;
+}
+
+#mobile_login button, #mobile_login input{
+    margin-bottom: 5px;
+    border-radius: 0 !important;
+    background-color: transparent; !important;
+}
+#mobile_search button i{
+    line-height: 20px;
+}
+
+#mobile_menu .icon{
+    float: left;
+}
+
+.icon div{
+    transition: 0.5s;
+}
+
+#mobile_menu > .icon > div{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.change .bar_1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar_2{
+    opacity: 0;
+}
+
+.change .bar_3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#menu_mobile_container{
+    overflow: auto;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    margin: 0;
+    margin-top: 49px;
+    background-color: white;
+    z-index: 3;
+    transition: 0.5s;
+}
+
+#menu_mobile_container .panel-group{
+    margin-bottom: 0 !important;
+}
+#menu_mobile_container .panel-group .panel{
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+#menu_mobile_container .panel-heading{
+    padding: 13px 14px !important;
+    border-bottom: 1px solid #e0e0e0 !important;
+    border-radius: 0 !important;
+}
+
+#login_info{
+    float: right;
+    padding-right: 5px;
+    font-size: 16px;
+    line-height: 39px;
+    font-weight: 600;
+    color: white;
+}
+/* phan xu ly menu voi mobile va desktop*/
+
+
+@media only screen and (max-width: 768px){
+    #myNav-Desktop,#toolbar{
+        display: none;
+    }
+    #mobile_menu{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #myNav-Desktop,#toolbar{
+        display: block;
+    }
+    #mobile_menu,#menu_mobile_container{
+        display: none;
+    }
+}
