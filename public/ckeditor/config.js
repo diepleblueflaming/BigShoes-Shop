@@ -36,10 +36,10 @@ CKEDITOR.editorConfig = function( config ) {
 	// Simplify the dialog windows.
 	config.removeDialogTabs = 'image:advanced;link:advanced';
 
-    config.filebrowserBrowseUrl ='http://localhostShop_Rental_Shoes/public/ckfinder/ckfinder.html';
-    config.filebrowserImageBrowseUrl = 'http://localhost/Shop_Rental_Shoes/public/ckfinder/ckfinder.html?type=Images';
-    config.filebrowserFlashBrowseUrl = 'http://localhost/Shop_Rental_Shoes/public/ckfinder/ckfinder.html?type=Flash';
+    config.filebrowserBrowseUrl ='http://diepledev.tk/public/ckfinder/ckfinder.html';
+    config.filebrowserImageBrowseUrl = 'http://diepledev.tk/public/ckfinder/ckfinder.html?type=Images';
+    config.filebrowserFlashBrowseUrl = 'http://diepledev.tk/public/ckfinder/ckfinder.html?type=Flash';
     config.filebrowserUploadUrl = 'http//localhost/Shop_Rental_Shoes/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
-    config.filebrowserImageUploadUrl = 'http://localhost/Shop_Rental_Shoes/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
-    config.filebrowserFlashUploadUrl = 'http://localhost/Shop_Rental_Shoes/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
+    config.filebrowserImageUploadUrl = 'http://diepledev.tk/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
+    config.filebrowserFlashUploadUrl = 'http://diepledev.tk/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
 };

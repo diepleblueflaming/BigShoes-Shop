@@ -171,7 +171,7 @@ function handler_cancel(){
 
 // ham tra ve url chung.
 function base_url(){
-    return "http://localhost/Shop_Rental_Shoes/admin/";
+    return "http://diepledev.tk/admin/";
 }
 
 // ham xu ly su kien xoa.
