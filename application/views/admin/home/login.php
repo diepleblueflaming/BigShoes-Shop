@@ -51,15 +51,8 @@
                 <div class="error"><?= isset($errors["password"]) ? $errors["password"] : form_error("password")?></div>
             </div>
             <div class="row">
-                <div class="col-xs-8">
-                    <div class="checkbox icheck">
-                        <label>
-                            <input type="checkbox"> Remember Me
-                        </label>
-                    </div>
-                </div>
                 <!-- /.col -->
-                <div class="col-xs-12" style="margin-bottom: 15px">
+                <div class="col-xs-12" style="margin-bottom: 25px">
                     <button type="submit" class="btn btn-primary btn-block btn-flat">Đăng Nhập</button>
                 </div>
                 <!-- /.col -->
