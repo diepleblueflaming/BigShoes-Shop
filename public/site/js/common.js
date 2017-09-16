@@ -18,7 +18,7 @@ $(function(){
 });
 
 function base_url(url){
-    return "http://diepledev.tk"+url;
+    return "http://diepledev.tk/"+url;
 }
 
 function set_color(){
