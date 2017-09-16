@@ -182,19 +182,16 @@ class News extends MY_controller{
             if($this->form_validation->run()){
 
                 // kiem tra ton tai.
-                if(!$this->check_title($this->input->post("title"))){
+                if(!$this->check_title($this->input->post("title"), $id)){
                     // neu ten san pham nay da ton tai bao loi ra.
                     goto next;
                 }
-
-
 
                 // lay ra du lieu.
                 $data =array();
                 $data['title'] = escape_string($this->input->post("title"));
                 $data['content'] = $this->input->post("content");
                 $data['summary_content'] = htmlspecialchars($this->input->post("summary_content"));
-
 
                 // neu co thay doi anh dai dien
                 if($this->choose_file()){
@@ -217,7 +214,6 @@ class News extends MY_controller{
                     }
                 }
 
-
                 // thuc hien them du lieu vao CSDL
                 if($this->news_model->update($id,$data)){
 
@@ -225,7 +221,6 @@ class News extends MY_controller{
                 }else{
                     alert_error("Chỉnh Sửa Bài Viết Thất Bại");
                 }
-
                 // dieu huong ve trang danh sach.
                 redirect(base_url("admin/news/"));
             }
@@ -239,12 +234,11 @@ class News extends MY_controller{
         $this->load->view("admin/layout",$this->data);
     }
 
-    // ham kiem tra su ton tai admin
-    public   function check_title($name, $id=0){
+    // ham kiem tra su ton tai cua bai viet
+    public   function check_title($name, $id = 0){
 
         // neu truyen vao id
         $id = $id ? " AND id != ".$id : "";
-
         $input = array(
             "where" => " (title = '{$name}') {$id}"
         );
@@ -328,20 +322,16 @@ class News extends MY_controller{
      */
 
     private  function del($id){
-
         // kiem tra xem admin co ton tai hay khong.
         $news = $this->news_model->get_info($id);
-
         if(!$news){
             alert_error("Bài Viết không Tồn Tại Không Thể Xóa");
             return false;
         }
-
         // neu co anh thuc hien xoa anh.
         if($news->image_link){
             $this->delete_img("upload/news/images/".$news->image_link);
         }
-
         // neu khong thuc hien xoa.
         if($this->news_model->delete($id)){
             return true;
