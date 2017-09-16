@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title><?= isset($title) ? $title : "Big Shoes"?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="<?=base_url("public/site/css/bootstrap.min.css") ?>" rel="stylesheet">
     <script src="<?=base_url("public/site/js/jquery-1.10.2.min.js") ?>" type="text/javascript"></script>
