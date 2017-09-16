@@ -25,6 +25,7 @@ class Product extends MY_controller{
         $catId = $this->uri->rsegment(3);
 
         // lay ra chuyen muc.
+        /** @var  $catalog \CatalogBean*/
         $catalog = $this->catalog_model->getCatalogById($catId);
 
         // neu co xap xep san pham.
@@ -60,6 +61,7 @@ class Product extends MY_controller{
 
         $this->data['temp'] = "site/product/category";
         $this->data['products'] = $products;
+        $this->data["title"] = $catalog->getTitle();
         $this->data['catalog'] = $catalog;
         $this->load->view($this->view,$this->data);
     }
@@ -78,6 +80,7 @@ class Product extends MY_controller{
 
         // get product
         $pId = $this->uri->rsegment(3);
+        /** @var  $product \ProductBean*/
         $product = $this->product_model->getProductById($pId);
         $catalog  = $this->catalog_model->getCatalogById($product->getCatalogId());
 
@@ -94,6 +97,7 @@ class Product extends MY_controller{
         $this->data['colors'] = $colors;
         $this->data['sizes'] = $sizes;
         $this->data['newProducts'] = $newProducts;
+        $this->data["title"] = $product->getName();
 
         $this->load->view($this->view,$this->data);
     }
@@ -172,6 +176,7 @@ class Product extends MY_controller{
 
         $this->data['temp'] = 'site/product/search';
         $this->data['products'] = $result;
+        $this->data["title"] = "Tìm Kiếm";
         $this->data['p_name_search'] = $product_name;
         $this->load->view($this->view,$this->data);
     }

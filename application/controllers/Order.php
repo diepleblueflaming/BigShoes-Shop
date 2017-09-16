@@ -157,6 +157,7 @@ class Order extends MY_controller{
         $this->data['totalPrice'] = $this->cart->total();
         $this->data['productId'] = $productId;
         $this->data['temp'] = 'site/cart/checkOut';
+        $this->data["title"] = "Check Out";
         $this->load->view('site/layout/null',$this->data);
     }
 

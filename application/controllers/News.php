@@ -24,6 +24,7 @@ class News extends MY_controller{
         $this->data['temp'] = 'site/news/category';
         $this->data['listNews']  = $listNews;
         $this->data['hotNews'] = $hotNews;
+        $this->data["title"] = "Blog";
         $this->load->view($this->view,$this->data);
     }
 
@@ -40,6 +41,7 @@ class News extends MY_controller{
 
         $this->data['temp'] = 'site/news/view';
         $this->data['news'] = $news;
+        $this->data["title"] = $news->getTitle();
         $this->data['hotNews'] = $hotNews;
         $this->load->view($this->view,$this->data);
     }

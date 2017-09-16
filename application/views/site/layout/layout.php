@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title><?= isset($title) ? $title : "BigShoes"?></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="<?=base_url("public/site/css/bootstrap.min.css") ?>" rel="stylesheet">
         <link href="<?=base_url("public/site/css/header.css") ?>" rel="stylesheet">

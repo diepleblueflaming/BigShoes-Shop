@@ -92,6 +92,7 @@ class Home extends MY_controller{
             }
         }
         // load view.
+        $this->data["title"] = "Liên Hệ";
         $this->data["temp"] = "site/home/contact";
         $this->load->view("site/layout/layout",$this->data);
     }
