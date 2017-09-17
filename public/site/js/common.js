@@ -177,8 +177,7 @@ function login_facebook() {
         "use strict";
         if (response.status == 'connected'){
             FB.api("/me",{locate : "vn_VN", fields : "name,email,gender"}, (res) => {
-               send_data_to_server(res, base_url("/user/login_facebook/"));
-                window.location.reload();
+               send_data_to_server(res, base_url("/user/login_facebook/"), true);
             });
         }else {
 
@@ -197,14 +196,17 @@ function login_gmail(auth2) {
                 id: profile.getId(),
                 name: profile.getName()
             }
-            send_data_to_server(params, base_url("user/login_google/"));
-            window.location.reload();
+            send_data_to_server(params, base_url("user/login_google/"), true);
         }
     });
 }
 
-function send_data_to_server($data, $server) {
+function send_data_to_server($data, $server, $needReload) {
     $.post($server, $.param($data)).then((response) => {
         "use strict";
+
+        if($needReload){
+            window.location.reload();
+        }
     });
 }
