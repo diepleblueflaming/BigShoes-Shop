@@ -29,6 +29,15 @@ $(function(){
             $("#btn_login_google").click(() => {
                login_gmail(auth2);
             });
+            $("#logout_link").on("click",() => {
+                let t = localStorage.getItem("type_login");
+                if (t && t == "google"){
+                    auth2.disconnect();
+                    auth2.signOut().then(() => {
+                        console.log("google logout");
+                    });
+                }
+            });
         }, () => {
 
         });
@@ -178,6 +187,7 @@ function login_facebook() {
         if (response.status == 'connected'){
             FB.api("/me",{locate : "vn_VN", fields : "name,email,gender"}, (res) => {
                send_data_to_server(res, base_url("/user/login_facebook/"), true);
+               localStorage.setItem("type_login","facebook");
             });
         }else {
 
@@ -197,6 +207,7 @@ function login_gmail(auth2) {
                 name: profile.getName()
             }
             send_data_to_server(params, base_url("user/login_google/"), true);
+            localStorage.setItem("type_login","google");
         }
     });
 }
@@ -204,7 +215,6 @@ function login_gmail(auth2) {
 function send_data_to_server($data, $server, $needReload) {
     $.post($server, $.param($data)).then((response) => {
         "use strict";
-
         if($needReload){
             window.location.reload();
         }

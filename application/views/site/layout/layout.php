@@ -29,7 +29,7 @@
                     appId: '1611409532205698',
                     cookie: true,
                     xfbml: true,
-                    version: 'v2.10'
+                    version: 'v2.8'
                 });
             }
         </script>
@@ -41,6 +41,7 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
+
     </head>
     <body>
         <div class="wrapper">
