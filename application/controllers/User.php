@@ -344,12 +344,32 @@ class User extends MY_controller{
      * method handling login via facebook
      */
     function login_facebook(){
-        $user_info = $this->input->post("user");
-        trigger($user_info);
-        if($user_info){
-            $this->session->set_userdata('user',[
-                'id' => $user_info
-            ]);
+        $id = $this->input->post("id");
+        $name = $this->input->post("name");
+
+        if(!$id || !$name){
+            return;
         }
+
+        $this->session->set_userdata('user',[
+            'id' => $id,
+            'name' => $name,
+            'is_manager' => false
+        ]);
+    }
+
+    function login_google(){
+        $id = $this->input->post("id");
+        $name = $this->input->post("name");
+
+        if(!$id || !$name){
+            return;
+        }
+
+        $this->session->set_userdata('user',[
+            'id' => $id,
+            'name' => $name,
+            'is_manager' => false
+        ]);
     }
 } 

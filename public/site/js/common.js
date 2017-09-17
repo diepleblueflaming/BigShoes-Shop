@@ -14,7 +14,34 @@ $(function(){
     // goi toi ham su ly su kien cuon trang cho menu top
     scroll_fixed();
 
-    login_facebook();
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId: '1611409532205698',
+            cookie: true,  // enable cookies to allow the server to access// the session
+            xfbml: true,  // parse social plugins on this page
+            version: 'v2.8' // use graph api version 2.8
+        });
+    }
+
+    $("#btn_login_facebook").click(() => {
+       login_facebook();
+    });
+
+
+    gapi.load("auth2", () => {
+        "use strict";
+        gapi.auth2.init({
+            client_id : "832663098268-ean9j1occph4rb36m40rb440r15lghki.apps.googleusercontent.com",
+            scope : "profile email"
+        }).then((auth2) => {
+            $("#btn_login_google").click(() => {
+               login_gmail(auth2);
+            });
+        }, () => {
+
+        });
+    })
+
 });
 
 function base_url(url){
@@ -155,44 +182,36 @@ function scroll_fixed(){
     function login via facebook
  */
 function login_facebook() {
-
-    function statusChangeCallback(response) {
-        // console.log('statusChangeCallback');
-        // console.log(response);
-        if (response.status === 'connected') {
-            FB.api('/me',{locate : 'vn_VN', fields : 'name,email,gender'}, function(response) {
-                // console.log('Successful login for: ' + response.name);
-                $.post(base_url('user/login_facebook/'),{user: response},(res) =>{
-
-                });
-
-                // $("#my_img").attr("src","http://graph.facebook.com/"+response.id+"/picture?type=large");
+    FB.login((response) => {
+        "use strict";
+        if (response.status == 'connected'){
+            FB.api("/me",{locate : "vn_VN", fields : "name,email,gender"}, (res) => {
+               send_data_to_server(res, base_url("/user/login_facebook/"));
             });
+        }else {
+
         }
-    }
-
-    function checkLoginState() {
-        FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-        });
-    }
-
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '1611409532205698',
-            cookie     : true,
-            xfbml      : true,
-            version    : 'v2.8'
-        });
-        FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-        });
-    };
+    });
 }
 
 /*
     login via gmail
  */
-function login_gmail() {
+function login_gmail(auth2) {
+    auth2.signIn().then(() => {
+        if (auth2.isSignedIn.get()) {
+            var profile = auth2.currentUser.get().getBasicProfile();
+            let params = {
+                id: profile.getId(),
+                name: profile.getName()
+            }
+            send_data_to_server(params, base_url("user/login_google/"));
+        }
+    });
+}
 
+function send_data_to_server($data, $server) {
+    $.post($server, $.param($data)).then((response) => {
+        "use strict";
+    });
 }

@@ -1,11 +1,3 @@
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 <div id="header" class="header">
     <!-- toolbar -->
     <div id="toolbar">
@@ -85,7 +77,6 @@
                                                 <form>
                                                     <div class="input-group">
                                                         <input type="text" name="m_login_username" placeholder="Tên đăng nhập" required="required" class="form-control" autocomplete="off">
-
                                                         <input type="password" name="m_login_password" placeholder="Mật khẩu" required="required" class="form-control" autocomplete="off">
                                                         <input type="button" class="form-control" name="m_btn_login" value="Login">
                                                     </div>

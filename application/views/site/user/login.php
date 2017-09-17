@@ -21,8 +21,14 @@
                         <label><input type="checkbox" name="remember_me" > Ghi Nhớ </label>
                     </div>
                     <div class="clearfix"></div>
-                    <a href="#" id="btn_login_facebook">FaceBook Login</a>
-                    <a href="#" id="btn_login_google">Google Login</a>
+                    <a href="#" id="btn_login_facebook" class="btn_social btn">
+                        <span class="fa fa-facebook"></span>
+                        Sign in Facebook
+                    </a>
+                    <a href="#" id="btn_login_google" class="btn_social btn">
+                        <span class="fa fa-google"></span>
+                        Sign in Google
+                    </a>
                     <button id="btn-login" ng-click="login()">Đăng Nhập</button>
                 </form>
             </div>
