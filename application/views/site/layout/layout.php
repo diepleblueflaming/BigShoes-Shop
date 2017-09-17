@@ -23,6 +23,16 @@
         <!-- raty phan danh gia ngoi sao-->
         <script type="text/javascript" src="<?=base_url("public/site/raty/jquery.raty.min.js"); ?>"></script>
         <script src="https://apis.google.com/js/api:client.js"></script>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId: '1611409532205698',
+                    cookie: true,
+                    xfbml: true,
+                    version: 'v2.10'
+                });
+            }
+        </script>
         <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;

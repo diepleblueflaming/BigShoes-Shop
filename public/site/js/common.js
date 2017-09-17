@@ -14,15 +14,6 @@ $(function(){
     // goi toi ham su ly su kien cuon trang cho menu top
     scroll_fixed();
 
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId: '1611409532205698',
-            cookie: true,  // enable cookies to allow the server to access// the session
-            xfbml: true,  // parse social plugins on this page
-            version: 'v2.8' // use graph api version 2.8
-        });
-    }
-
     $("#btn_login_facebook").click(() => {
        login_facebook();
     });
@@ -34,14 +25,14 @@ $(function(){
             client_id : "832663098268-ean9j1occph4rb36m40rb440r15lghki.apps.googleusercontent.com",
             scope : "profile email"
         }).then((auth2) => {
+            console.log('init');
             $("#btn_login_google").click(() => {
                login_gmail(auth2);
             });
         }, () => {
 
         });
-    })
-
+    });
 });
 
 function base_url(url){
@@ -187,6 +178,7 @@ function login_facebook() {
         if (response.status == 'connected'){
             FB.api("/me",{locate : "vn_VN", fields : "name,email,gender"}, (res) => {
                send_data_to_server(res, base_url("/user/login_facebook/"));
+                window.location.reload();
             });
         }else {
 
@@ -206,6 +198,7 @@ function login_gmail(auth2) {
                 name: profile.getName()
             }
             send_data_to_server(params, base_url("user/login_google/"));
+            window.location.reload();
         }
     });
 }
