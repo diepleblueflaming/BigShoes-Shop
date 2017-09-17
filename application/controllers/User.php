@@ -354,7 +354,7 @@ class User extends MY_controller{
         $this->session->set_userdata('user',[
             'id' => $id,
             'name' => $name,
-            'is_manager' => false
+            'role' => false
         ]);
     }
 
@@ -369,7 +369,7 @@ class User extends MY_controller{
         $this->session->set_userdata('user',[
             'id' => $id,
             'name' => $name,
-            'is_manager' => false
+            'role' => false
         ]);
     }
 } 

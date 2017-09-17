@@ -142,8 +142,10 @@ angular.module('commentModule',[]).controller('commentCtrl',function($scope,$htt
 
         var $id = ( id == undefined ) ? 0 : id;
         var ele  = event.currentTarget;
-        var $content = $(ele).siblings("#txtComment").val();
-        var $userComment = $(ele).siblings("#txtNameComment").children().val();
+        var $txt_comment = $(ele).siblings("#txtComment");
+        var $txt_user = $(ele).siblings("#txtNameComment").children();
+        var $content = $txt_comment.val();
+        var $userComment = $txt_user.val();
 
         var $param = {question_id : $id, content : $content, user_comment : $userComment, product_id : getProductId()}
         $http.post(base_url("comment/addComment/"), $.param($param)).then(function($response){
@@ -152,7 +154,11 @@ angular.module('commentModule',[]).controller('commentCtrl',function($scope,$htt
                 alert($response.data.error);
             }else{
                 $scope.comments = $response.data;
-                handlerReply();
+                if(id){
+                    handlerReply();
+                }
+                $txt_comment.val('');
+                $txt_user.val('');
             }
         });
     }
