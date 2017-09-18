@@ -301,7 +301,7 @@ class User extends MY_controller{
         $body="Mật Khẩu mới của bạn tại BigShoes là: {$pass} \n\n Bạn có thể sử dụng password này";
         $body.="để đăng nhập vào website của chúng tôi.Thank You";
 
-        if(mail($email,"Retrieve new Password from BigShoes",$body,"FROM : localhost")) {
+        if(mail($email,"Retrieve new Password from BigShoes",$body,"FROM : Localhost")) {
             $this->user_model->update_rule(["email" => $email],["password" => md5($pass)]);
             die(
                 json_encode(["success" => true]));

@@ -13,6 +13,7 @@ class MY_Controller extends CI_Controller{
     public function __construct(){
 
         parent::__construct();
+        date_default_timezone_set("Asia/Ho_Chi_Minh");
 
         // load ra cac thu vien dung chung can thiet cho phan qan tri.
         $this->load->library("session");
