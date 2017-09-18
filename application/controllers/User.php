@@ -348,10 +348,6 @@ class User extends MY_controller{
         $name = $this->input->post("name");
         $email = $this->input->post("email");
 
-        if(!$fb_id || !$name || $email){
-            return;
-        }
-
         $data = [
             "username" => $name,
             "email" => $email,
@@ -361,27 +357,25 @@ class User extends MY_controller{
             "fb_id" => $fb_id
         ];
 
-        if(!$this->user_model->get_info_rule(["fb_id" => $fb_id], "id")){
-            if(!$this->user_model->add($data)){
+        if(!($id = $this->user_model->getUserBy(["fb_id" => $fb_id, "email" => $email], "id"))){
+            if(!$this->user_model->create($data)){
                 return;
             }
+            $id = $this->db->insert_id();
         }
 
         $this->session->set_userdata('user',[
-            'id' => $this->db->insert_id(),
+            'id' => $id,
             'name' => $name,
             'role' => false
         ]);
     }
 
     function login_google(){
+
         $google_id = $this->input->post("id");
         $name = $this->input->post("name");
         $email = $this->input->post("email");
-
-        if(!$google_id || !$name || $email){
-            return;
-        }
 
         $data = [
             "username" => $name,
@@ -392,14 +386,15 @@ class User extends MY_controller{
             "google_id" => $google_id
         ];
 
-        if(!$this->user_model->get_info_rule(["google_id" => $google_id], "id")){
-            if(!$this->user_model->add($data)){
+        if(!($id = $this->user_model->getUserBy(["google_id" => $google_id, "email" => $email], "id"))){
+            if(!$this->user_model->create($data)){
                 return;
             }
+            $id = $this->db->insert_id();
         }
 
         $this->session->set_userdata('user',[
-            'id' => $this->db->insert_id(),
+            'id' => $id,
             'name' => $name,
             'role' => false
         ]);
