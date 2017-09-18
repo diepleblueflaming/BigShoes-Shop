@@ -357,7 +357,7 @@ class User extends MY_controller{
             "fb_id" => $fb_id
         ];
 
-        if(!($id = $this->user_model->getUserBy(["fb_id" => $fb_id, "email" => $email], "id"))){
+        if(!($id = $this->user_model->getUserBy(["fb_id" => $fb_id, "email" => $email], "id")->id)){
             if(!$this->user_model->create($data)){
                 return;
             }
@@ -386,7 +386,7 @@ class User extends MY_controller{
             "google_id" => $google_id
         ];
 
-        if(!($id = $this->user_model->getUserBy(["google_id" => $google_id, "email" => $email], "id"))){
+        if(!($id = $this->user_model->getUserBy(["google_id" => $google_id, "email" => $email], "id")->id)){
             if(!$this->user_model->create($data)){
                 return;
             }

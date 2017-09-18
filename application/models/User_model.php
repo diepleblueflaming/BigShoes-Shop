@@ -10,7 +10,7 @@ class User_model extends  MY_Model{
     var $table  = "user";
     var $key = "id";
 
-    public function getUserBy($where, $fields){
+    public function getUserBy($where, $fields = ''){
         if($fields)
         {
             $this->db->select($fields);
