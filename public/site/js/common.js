@@ -217,7 +217,7 @@ function send_data_to_server($data, $server, $needReload) {
     $.post($server, $.param($data)).then((response) => {
         "use strict";
         if($needReload){
-            //window.location.reload();
+            window.location.reload();
         }
     });
 }
