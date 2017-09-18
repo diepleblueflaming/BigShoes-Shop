@@ -204,7 +204,8 @@ function login_gmail(auth2) {
             var profile = auth2.currentUser.get().getBasicProfile();
             let params = {
                 id: profile.getId(),
-                name: profile.getName()
+                name: profile.getName(),
+                email : profile.getEmail()
             }
             send_data_to_server(params, base_url("user/login_google/"), true);
             localStorage.setItem("type_login","google");

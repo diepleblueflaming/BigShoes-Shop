@@ -344,30 +344,62 @@ class User extends MY_controller{
      * method handling login via facebook
      */
     function login_facebook(){
-        $id = $this->input->post("id");
+        $fb_id = $this->input->post("id");
         $name = $this->input->post("name");
+        $email = $this->input->post("email");
 
-        if(!$id || !$name){
+        if(!$fb_id || !$name || $email){
             return;
         }
 
+        $data = [
+            "username" => $name,
+            "email" => $email,
+            "password" => '',
+            "created" => date("Y-m-d H:i:s",time()),
+            "phone" => '',
+            "fb_id" => $fb_id
+        ];
+
+        if(!$this->user_model->get_info_rule(["fb_id" => $fb_id], "id")){
+            if(!$this->user_model->add($data)){
+                return;
+            }
+        }
+
         $this->session->set_userdata('user',[
-            'id' => $id,
+            'id' => $this->db->insert_id(),
             'name' => $name,
             'role' => false
         ]);
     }
 
     function login_google(){
-        $id = $this->input->post("id");
+        $google_id = $this->input->post("id");
         $name = $this->input->post("name");
+        $email = $this->input->post("email");
 
-        if(!$id || !$name){
+        if(!$google_id || !$name || $email){
             return;
         }
 
+        $data = [
+            "username" => $name,
+            "email" => $email,
+            "password" => '',
+            "created" => date("Y-m-d H:i:s",time()),
+            "phone" => '',
+            "google_id" => $google_id
+        ];
+
+        if(!$this->user_model->get_info_rule(["google_id" => $google_id], "id")){
+            if(!$this->user_model->add($data)){
+                return;
+            }
+        }
+
         $this->session->set_userdata('user',[
-            'id' => $id,
+            'id' => $this->db->insert_id(),
             'name' => $name,
             'role' => false
         ]);
