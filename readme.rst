@@ -1,12 +1,12 @@
-Web bán giầy online BigShoes
-Link demo : http://diepledev.tk
+- Web bán giầy online BigShoes
+- Link demo : http://diepledev.tk
 
-Tính năng : 
+- Tính năng : 
   + Người dùng : 
-    Giao diện :
+    + Giao diện :
       Đơn giản, đẹp mắt
       Response trên laptop, tablet, mobile.
-    Chức năng : 
+    + Chức năng : 
       Xem các sản phẩm giày, các  bài viết về xu hướng giày dép.
       Bình luận về các sản phẩm.
       Đặt hàng trực tuyến.
@@ -14,9 +14,9 @@ Tính năng :
       Tìm kiếm sản phẩm.
       Đăng nhập, Đăng nhập qua facebook, google, đăng kí thành viên, đăng xuất.
   + Người quản lý : 
-    Giao diện : 
+    + Giao diện : 
       Đơn giản, dễ sử dụng.
-    Chức năng : 
+    + Chức năng : 
       Quản lý các module người dùng, bài viết, bình luận, sản phẩm.
       Thông báo khi có đơn hàng , phản hồi mới.
       Đăng nhập, đăng xuất, đăng kí thành viên. 
