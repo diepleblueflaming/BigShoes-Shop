@@ -1,8 +1,7 @@
 - Web bán giầy online BigShoes
 - Link demo : http://diepledev.tk
 
-- Tính năng : 
-  + Người dùng : 
+- Người dùng : 
     + Giao diện :
       Đơn giản, đẹp mắt
       Response trên laptop, tablet, mobile.
@@ -13,7 +12,7 @@
       Liên hệ, phản hồi.
       Tìm kiếm sản phẩm.
       Đăng nhập, Đăng nhập qua facebook, google, đăng kí thành viên, đăng xuất.
-  + Người quản lý : 
+- Người quản lý : 
     + Giao diện : 
       Đơn giản, dễ sử dụng.
     + Chức năng : 
