@@ -39,7 +39,7 @@ CKEDITOR.editorConfig = function( config ) {
     config.filebrowserBrowseUrl ='http://diepledev.tk/public/ckfinder/ckfinder.html';
     config.filebrowserImageBrowseUrl = 'http://diepledev.tk/public/ckfinder/ckfinder.html?type=Images';
     config.filebrowserFlashBrowseUrl = 'http://diepledev.tk/public/ckfinder/ckfinder.html?type=Flash';
-    config.filebrowserUploadUrl = 'http//localhost/Shop_Rental_Shoes/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
+    config.filebrowserUploadUrl = 'http://diepledev.tk/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
     config.filebrowserImageUploadUrl = 'http://diepledev.tk/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
     config.filebrowserFlashUploadUrl = 'http://diepledev.tk/public/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
 };
