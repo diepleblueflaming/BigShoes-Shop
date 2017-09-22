@@ -79,7 +79,7 @@ class Color extends MY_Controller{
         if($this->input->post()){
 
             // gan validate cho cac truong du lieu.
-            $this->form_validation->set_rules("color","Màu Sắc","required|callback_valid_str");
+            $this->form_validation->set_rules("color","Màu Sắc","required");
 
             // chay kiem tra
             if($this->form_validation->run()){

@@ -16,7 +16,7 @@ $this->load->view("admin/color/head");
     <form class="form-horizontal" action="" method="post">
 
         <div class="form-group">
-            <label for="color" class="col-sm-2 control-label">Màu Sắc<span class="req">*</span></label>
+            <label for="color" class="col-sm-2 control-label">Tên Màu/Mã Hex<span class="req">*</span></label>
 
             <div class="col-sm-10">
                 <input class="form-control" id="color" placeholder="Màu Sắc" type="text" name="color"
