@@ -37,7 +37,7 @@ class Product_color_size extends MY_controller{
         $config  = array(
             "uri_segment" => 4,
             "per_page" => $per_page,
-            "base_url" => base_url("admin/Product_Color_Size/index/"),
+            "base_url" => base_url("admin/Product_color_size/index/"),
             "total_rows" =>$total,
         );
 
@@ -131,7 +131,7 @@ class Product_color_size extends MY_controller{
         $this->data['products'] = $list[0];
         $this->data['colors'] = $list[1];
         $this->data['sizes'] = $list[2];
-        $this->data['temp'] = "admin/PCS/add_or_update";
+        $this->data['temp'] = "admin/pcs/add_or_update";
         $this->data["action"] = "Thêm Mới";
         $this->load->view("admin/layout",$this->data);
     }
@@ -194,7 +194,7 @@ class Product_color_size extends MY_controller{
         $this->data['colors'] = $list[1];
         $this->data['sizes'] = $list[2];
         $this->data['info'] = $info;
-        $this->data['temp'] = "admin/PCS/add_or_update";
+        $this->data['temp'] = "admin/pcs/add_or_update";
         $this->data["action"] = "Chỉnh Sửa";
         $this->load->view("admin/layout",$this->data);
     }

@@ -109,7 +109,7 @@ class Product extends MY_controller{
     public function getQtyProduct(){
 
         // load model
-        $this->load->model("Product_Size_Color_model","psc");
+        $this->load->model("Product_size_color_model","psc");
 
         // check if request is xmlrequest.
         if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&  strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === "xmlhttprequest"){
