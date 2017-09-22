@@ -74,7 +74,7 @@
                                             <td><?php echo $it->p_id ?></td>
                                             <td><?php echo $it->name?></td>
                                             <td><?php echo show_img("product/".$it->image)?></td>
-                                            <td><span style="height: 200px; width: 20px; background-color: <?=$it->color?>;"></span></td>
+                                            <td><span style="height: 20px; display: block; background-color: <?=$it->color?>;"></span></td>
                                             <td><?=$it->size?></td>
                                             <td><?=$it->qty?></td>
                                             <td>

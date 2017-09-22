@@ -226,7 +226,7 @@
                                         </div>
 
                                         <div class="product-rating">
-                                            No rating
+                                            <div class='raty' data-score='<?=($item->getRateTotal()/$item->getRateCount())?>'></div>
                                         </div>
                                         <div class="product-price">
                                             <?php if($item->getSpecialPrice()){?>
