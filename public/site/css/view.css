@@ -21,6 +21,10 @@
     margin: 5px 0;
 }
 
+.product-title{
+    height: 50px;
+}
+
 
 #product-img-container{
     width: 100%;

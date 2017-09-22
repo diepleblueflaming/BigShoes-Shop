@@ -33,6 +33,7 @@
                     <div class="owl-carousel owl-theme" id="product-slider">
                         <?php
                             $images = json_decode($product->getImageList());
+                            array_unshift($images, $product->getImage());
                             if($images){
                                 for($i = 0; $i < count($images); $i++){ ?>
                                     <div class="item"><img src="<?=getProductUri($images[$i])?>" style="height: 100%"></div>
