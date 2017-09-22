@@ -35,6 +35,6 @@ class MY_Email extends CI_Email{
         if(!$this->send()){
             echo "failed";
         }
-        $this->print_debugger();
+        echo $this->print_debugger();
     }
 }

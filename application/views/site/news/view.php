@@ -37,7 +37,7 @@
                     <?=$news->content?>
                 </div>
 
-                <div class="fb-comments" data-href="<?="http://t0178.dieplh.store.dev.nhanh.vn".$_SERVER['REQUEST_URI']?>" data-colorscheme="light"
+                <div class="fb-comments" data-href="<?=$_SERVER['REQUEST_URI']?>" data-colorscheme="light"
                      data-numposts="5" data-width="100%">
                 </div>
             </div>

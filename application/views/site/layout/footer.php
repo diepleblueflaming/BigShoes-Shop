@@ -10,13 +10,13 @@
         <div class="col-xs-12 col-sm-6 col-md-4 footer_item" id="footer_facebook">
             <div class="footer_title"><i class="fa fa-facebook"></i> FACEBOOK</div>
             <div class="widget fb-page"
-                 data-href="https://www.facebook.com/nhanh.vn/"
+                 data-href="https://web.facebook.com/bigshoes.gr/"
                  data-small-header=false
                  data-hide-cover=false
                  data-show-facepile=false>
                 <div class="fb-xfbml-parse-ignore">
-                    <blockquote cite="https://www.facebook.com/nhanh.vn/">
-                        <a href="https://www.facebook.com/nhanh.vn/">Nhanh</a>
+                    <blockquote cite="https://web.facebook.com/bigshoes.gr/">
+                        <a href="https://web.facebook.com/bigshoes.gr/">BigShoes</a>
                     </blockquote>
                 </div>
             </div>
