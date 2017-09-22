@@ -11,7 +11,7 @@ class Order extends MY_controller{
     public function __construct(){
         parent::__construct();
 
-        $this->load->model(["product_model","transaction_model",'order_model','Product_Size_Color_model']);
+        $this->load->model(["product_model","transaction_model",'order_model', 'Product_size_color_model']);
     }
 
     public function checkOut(){
