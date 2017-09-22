@@ -1,4 +1,4 @@
-<?php $this->load->view("admin/PCS/head")?>
+<?php $this->load->view("admin/pcs/head")?>
 <div class="content">
     <div class="row">
         <div class="col-xs-12">

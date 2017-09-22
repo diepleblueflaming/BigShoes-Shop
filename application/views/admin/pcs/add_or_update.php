@@ -1,6 +1,6 @@
 <?php
 // include phan head
-$this->load->view("admin/PCS/head");
+$this->load->view("admin/pcs/head");
 ?>
 <section class="content">
 <div class="row">
