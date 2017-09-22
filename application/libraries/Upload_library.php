@@ -101,7 +101,7 @@ class Upload_library {
 
         $config = array(
             'upload_path' => $upload_path,
-            'max-size' => 1024,
+            'max_size' => 1024,
             'max_height' => 1024,
             'max_length' => 1024,
             'allowed_types' => "jpg|jpeg|png|gif"
