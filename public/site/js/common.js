@@ -1,5 +1,5 @@
 $(function(){
-    set_color();
+
     $('[data-toggle="tooltip"]').tooltip();
 
     $("#btn-check-out").click(function(){
@@ -47,19 +47,6 @@ $(function(){
 function base_url(url){
     return "http://diepledev.tk/"+url;
 }
-
-function set_color(){
-
-    setTimeout(function(){
-        var list = $(".p-color-item .color");
-
-        $(list).each(function(k,v){
-            var color = $(v).attr("id").match(/[a-zA-z]+/)[0];
-            $(this).css("background",color);
-        });
-    },400);
-}
-
 
 function showFormLogin(){
     $("#login_link").click(function(){

@@ -87,7 +87,7 @@
                             <?php if($colors){
                                 /** @var  $c ColorBean*/
                                 foreach($colors as $c){ ?>
-                                    <div class="p-color-item" id="<?=$c->getName()."-".$c->getId()?>">
+                                    <div class="p-color-item" id="<?=$c->getId()?>" style="background-color: <?=$c->getName()?>">
                                         <div class="icon-check">
                                             <i class="fa fa-check"></i>
                                         </div>

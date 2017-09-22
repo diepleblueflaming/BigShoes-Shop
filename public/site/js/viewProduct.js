@@ -6,9 +6,6 @@ $(document).ready(function(){
     handler_choose_option("p-color-item");
     handler_choose_option("p-size-item");
 
-    //ham set mau cho cac lua chon.
-    set_color();
-
     // ham lay ra so luong san pham ung voi mau sac va kich thuoc.
     getQtyProduct();
 
@@ -177,7 +174,7 @@ function getColorId(){
     var colors = $("div[class^='p-color-item']").filter(".isSelected");
     var colorId = colors.attr("id");
 
-    return colorId == undefined ? 0 : parseInt(colorId.match(/[0-9]+/g)[0]);
+    return colorId == undefined ? 0 : parseInt(colorId);
 }
 
 // function get size id
