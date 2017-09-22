@@ -33,5 +33,4 @@
     <![endif]-->
 </head>
 
-<script src="<?php echo public_url("common_library.js")?>" type="text/javascript"></script>
 <script src="<?php echo public_url("ckeditor/ckeditor.js")?>" type="text/javascript"></script>
