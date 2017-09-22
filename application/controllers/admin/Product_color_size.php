@@ -72,7 +72,7 @@ class Product_color_size extends MY_controller{
         // neu co thong bao lay ra thong bao.
         $this->data['message'] = $this->session->flashdata("message");
         // load view.
-        $this->data['temp'] = "admin/PCS/index";
+        $this->data['temp'] = "admin/pcs/index";
         $this->load->view("admin/layout",$this->data);
     }
 
