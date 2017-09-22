@@ -31,6 +31,7 @@ $(document).ready(function(){
     },function(){
         hoverEffect($(this).find(".list-action").children(),'remove','list-action-effect');
     })
+    rating();
 })
 
 
@@ -48,5 +49,16 @@ function hoverEffect($list,$type,$class){
         },timeEffect);
 
         timeEffect += 200;
+    });
+}
+
+function rating(){
+    $.fn.raty.defaults.path = base_url("public/site/raty/img");
+    $('.raty').raty({
+        score: function () {
+            return $(this).attr('data-score');
+        },
+        width : 115,
+        readOnly: true
     });
 }

@@ -292,6 +292,3 @@ function set_width() {
 }
 
 
-function set_default_width() {
-    
-}
