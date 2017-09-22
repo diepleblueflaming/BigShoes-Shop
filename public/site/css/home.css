@@ -332,6 +332,10 @@ li.active{
     opacity: 0.8;
 }
 
+.product-title{
+    height: 50px;
+}
+
 
                     /*phan list post slide*/
 
