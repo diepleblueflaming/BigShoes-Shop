@@ -6,8 +6,8 @@
 
 - Người dùng : 
     + Giao diện :
-        Đơn giản, đẹp mắt
-        Response trên laptop, tablet, mobile.
+        - Đơn giản, đẹp mắt
+        - Response trên laptop, tablet, mobile.
     + Chức năng : 
         - Xem các sản phẩm giày, các  bài viết về xu hướng giày dép.
         - Bình luận về các sản phẩm.
