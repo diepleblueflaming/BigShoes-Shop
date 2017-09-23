@@ -21,6 +21,7 @@ class Product_model extends MY_Model{
 
         $input = array(
             "order" => array(PRODUCT_BOUGHT,"DESC"),
+            "where" => [""],
             "limit" => array(4,0)
         );
 
@@ -111,7 +112,7 @@ class Product_model extends MY_Model{
 
     /**
      * Ham tim kiem san pham
-     * @param $p_name
+     * @param $input []
      * @return array
      */
     public function searchProduct($input){

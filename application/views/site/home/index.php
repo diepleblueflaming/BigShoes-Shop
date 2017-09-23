@@ -51,8 +51,8 @@
                     <div class="home-feature-body">
                         <p><b>Giao hàng trên toàn quốc:</b></p>
                         <p>
-                            Giaytot.com luôn cố gắng mang đến chất lượng dịch vụ tốt nhất cho Quý khách hàng.
-                            Do vậy, dù ở bất kỳ đâu tại Việt Nam, Quý khách đều nhận được sản phẩm từ Giaytot.com.
+                            BigShoes luôn cố gắng mang đến chất lượng dịch vụ tốt nhất cho Quý khách hàng.
+                            Do vậy, dù ở bất kỳ đâu tại Việt Nam, Quý khách đều nhận được sản phẩm từ BigShoes.
                         </p>
                     </div>
 
@@ -75,9 +75,9 @@
                         <p><b>Giảm thêm 5% khi mua từ 2 đôi giày trở lên</b></p>
 
                         <p>Đối với khách hàng mua từ 2 đôi giày trở lên,
-                            Giaytot.com tặng Quý khách 5% giảm giá trên tổng giá trị sản phẩm.
+                            BigShoes tặng Quý khách 5% giảm giá trên tổng giá trị sản phẩm.
                             5% này được áp dụng chung với các chương trình giảm giá khác (nếu có).
-                            Đây là chính sách cố định dành cho tất cả các khách hàng của Giaytot.com.
+                            Đây là chính sách cố định dành cho tất cả các khách hàng của BigShoes.
                         </p>
                     </div>
 
@@ -196,7 +196,7 @@
                             </div>
                         <?php
                         }
-                    }?>ating
+                    }?>
                 </div>
 
                 <div class="tab-content-item owl-carousel owl-theme" id="tab-content-new-receive">
