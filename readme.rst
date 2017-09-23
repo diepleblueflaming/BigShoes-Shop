@@ -1,6 +1,6 @@
 - Web bán giầy online BigShoes
 - Link demo : http://diepledev.tk
-- Link phần  qtrị : http://diepledev.tk\admin\
+- Link phần  qtrị : http://diepledev.tk/admin/
     + account : customer@gmail.com.
     + password : customer.
 
