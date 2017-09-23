@@ -179,7 +179,7 @@
                                         </div>
 
                                         <div class="product-rating">
-                                            <div class='raty' data-score='<?=($item->getRateTotal()/$item->getRateCount())?>'></div>
+                                            <div class='raty' data-score='<?=$p->getRateCount() ? ($p->getRateTotal()/$p->getRateCount()) : 0?>'></div>
                                         </div>
                                         <div class="product-price">
                                             <?php if($item->getSpecialPrice()){?>
@@ -226,7 +226,7 @@
                                         </div>
 
                                         <div class="product-rating">
-                                            <div class='raty' data-score='<?=($item->getRateTotal()/$item->getRateCount())?>'></div>
+                                            <div class='raty' data-score='<?=$p->getRateCount() ? ($p->getRateTotal()/$p->getRateCount()) : 0?>'></div>
                                         </div>
                                         <div class="product-price">
                                             <?php if($item->getSpecialPrice()){?>
@@ -289,7 +289,7 @@
                                                     </div>
 
                                                     <div class="product-rating">
-                                                        <div class='raty' data-score='<?=($item->getRateTotal()/$item->getRateCount())?>'></div>
+                                                        <div class='raty' data-score='<?=$p->getRateCount() ? ($p->getRateTotal()/$p->getRateCount()) : 0?>'></div>
                                                     </div>
                                                     <div class="product-price">
                                                         <?php if($item->getSpecialPrice()){?>

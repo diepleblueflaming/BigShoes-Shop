@@ -43,6 +43,9 @@ class Product extends MY_controller{
 
             foreach($arr as $key => $val){
                 $input["order"] = ($order == $key) ? $val : "id";
+                if($order == "sale"){
+                    $input["where"] = "discount = 0";
+                }
             }
 
         }
