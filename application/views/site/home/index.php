@@ -179,7 +179,7 @@
                                         </div>
 
                                         <div class="product-rating">
-                                            <div class='raty' data-score='<?=$p->getRateCount() ? ($p->getRateTotal()/$p->getRateCount()) : 0?>'></div>
+                                            <div class='raty' data-score='<?=$item->getRateCount() ? ($item->getRateTotal()/$item->getRateCount()) : 0?>'></div>
                                         </div>
                                         <div class="product-price">
                                             <?php if($item->getSpecialPrice()){?>
@@ -196,7 +196,7 @@
                             </div>
                         <?php
                         }
-                    }?>
+                    }?>ating
                 </div>
 
                 <div class="tab-content-item owl-carousel owl-theme" id="tab-content-new-receive">
@@ -226,7 +226,7 @@
                                         </div>
 
                                         <div class="product-rating">
-                                            <div class='raty' data-score='<?=$p->getRateCount() ? ($p->getRateTotal()/$p->getRateCount()) : 0?>'></div>
+                                            <div class='raty' data-score='<?=$item->getRateCount() ? ($item->getRateTotal()/$item->getRateCount()) : 0?>'></div>
                                         </div>
                                         <div class="product-price">
                                             <?php if($item->getSpecialPrice()){?>
@@ -289,7 +289,7 @@
                                                     </div>
 
                                                     <div class="product-rating">
-                                                        <div class='raty' data-score='<?=$p->getRateCount() ? ($p->getRateTotal()/$p->getRateCount()) : 0?>'></div>
+                                                        <div class='raty' data-score='<?=$item->getRateCount() ? ($item->getRateTotal()/$item->getRateCount()) : 0?>'></div>
                                                     </div>
                                                     <div class="product-price">
                                                         <?php if($item->getSpecialPrice()){?>
