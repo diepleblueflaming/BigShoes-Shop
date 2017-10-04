@@ -57,7 +57,6 @@
                                 <th>Transaction</th>
                                 <th>Amount</th>
                                 <th>Status</th>
-                                <th>Date Of Creating</th>
                                 <th id="no_sort">Action</th>
                             </tr>
                             </thead>
@@ -71,7 +70,6 @@
                                     <td><?php echo $it->transaction ?></td>
                                     <td><?php echo number_format($it->amount) ?></td>
                                     <td><?php echo $it->status ? "<span style='color: #008d4c'>Đã Thanh Toán</span>" : "<span style='color: #005ecf'>Chưa Thanh Toán</span>"?></td>
-                                    <td><?php echo $it->created ?></td>
                                     <td>
                                         <a href="<?php echo base_url("admin/order/delete/".$it->id)?>" title="Xóa" class="req"><span class="fa fa-remove"></span></a><span class="separate">|</span>
                                         <a href="<?php echo base_url("admin/order/edit/".$it->id)?>" title="Sửa"><span class="fa fa-edit"></span></a><span class="separate">|</span>
