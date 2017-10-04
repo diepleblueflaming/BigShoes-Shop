@@ -107,7 +107,7 @@ class Order extends MY_controller{
                     "receive" => $receive, // receive
                     "receive_info" => $receive_info,
                     "amount" => $this->cart->total(), // amount
-                    "status" => 1, // status
+                    "status" => 0, // status
                     "user_id" => NULL, // user_id
                     "created" => date("Y-m-d",time())
                 ]; // created
@@ -130,7 +130,7 @@ class Order extends MY_controller{
                             "color_id" => $colorId, //color_id
                             "product_id" => $productId, // product_id
                             "size_id" => $sizeId, // size_id
-                            "status" => 1, // status
+                            "status" => 0, // status
                             "amount" => $cart['subtotal'], // amount
                             "qty" => $qty,
                             "created" => date("Y-m-d",time()) // created
