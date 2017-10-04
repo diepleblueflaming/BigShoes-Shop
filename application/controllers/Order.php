@@ -109,7 +109,7 @@ class Order extends MY_controller{
                     "amount" => $this->cart->total(), // amount
                     "status" => 0, // status
                     "user_id" => NULL, // user_id
-                    "created" => date("Y-m-d",time())
+                    "created" => date("Y-m-d H:i:s",time())
                 ]; // created
 
                 // Thuc hien them 1 don hang
@@ -133,7 +133,7 @@ class Order extends MY_controller{
                             "status" => 0, // status
                             "amount" => $cart['subtotal'], // amount
                             "qty" => $qty,
-                            "created" => date("Y-m-d",time()) // created
+                            "created" => date("Y-m-d H:i:s",time()) // created
                         ];
 
                         $this->order_model->add($order);
