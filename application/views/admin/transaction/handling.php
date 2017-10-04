@@ -37,11 +37,11 @@
                                                 <?=show_img("/product/".$it->image)?><br>
                                                 <?=$it->product_name?>
                                             </td>
-                                            <td><?=$it->color?></td>
+                                            <td><span class="display_color" style="background-color: <?=$it->color?>"></span></td>
                                             <td><?=$it->size?></td>
                                             <td><?=$it->qty?></td>
                                             <td><?=number_format($it->amount)?></td>
-                                            <td><?=date_format(date_create($it->created),"d-m-Y H:i:s")?></td>
+                                            <td><?=date_format(date_create($it->created),"Y-m-d H:i:s")?></td>
                                             <?php $total += $it->amount?>
                                         </tr>
                                     <?php endforeach?>
