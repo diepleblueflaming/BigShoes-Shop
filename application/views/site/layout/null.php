@@ -10,7 +10,25 @@
     <script src="<?=base_url("public/site/js/common.js") ?>" type="text/javascript"></script>
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId: '1611409532205698',
+                cookie: true,
+                xfbml: true,
+                version: 'v2.8'
+            });
+        }
+    </script>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- common css -->
     <link rel="stylesheet" href="<?=base_url("public/site/css/common.css") ?>">
 
