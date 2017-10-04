@@ -39,9 +39,9 @@
                                             <div class="color_container">
                                                 <div class="label-text">Màu Sắc </div>
                                                 <div ng-init="color=options['color']"></div>
-                                                <span class="color active" id="{{color.name+'-'+color.id}}" style="color : {{color.name}}"></span>
+                                                <span class="color active" id="{{color.name+'-'+color.id}}" style="background-color : {{color.name}}"></span>
                                                 <div class="list_color">
-                                                    <span class="color" ng-repeat="c in options['colors']" id="{{c.name+'-'+c.id}}" ng-click="changeData(item.id,c,'color')" style="color:{{c.name}}"></span>
+                                                    <span class="color" ng-repeat="c in options['colors']" id="{{c.name+'-'+c.id}}" ng-click="changeData(item.id,c,'color')" style="background-color:{{c.name}}"></span>
                                                 </div>
                                             </div>
                                             <div class="size_container">
