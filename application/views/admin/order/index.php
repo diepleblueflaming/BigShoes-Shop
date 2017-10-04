@@ -95,7 +95,6 @@
                                 <th rowspan="1" colspan="1">Transaction</th>
                                 <th rowspan="1" colspan="1">Amount</th>
                                 <th rowspan="1" colspan="1">Status</th>
-                                <th rowspan="1" colspan="1">Date Of Creating</th>
                                 <th rowspan="1" colspan="1">Action</th>
                             </tr>
                             </tfoot>
