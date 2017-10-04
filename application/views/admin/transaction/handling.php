@@ -37,7 +37,7 @@
                                                 <?=show_img("/product/".$it->image)?><br>
                                                 <?=$it->product_name?>
                                             </td>
-                                            <td><span style="width50px; height20px; display: inline-block; background-color: <?=$it->color?>"></span></td>
+                                            <td><span style="width50px; height:20px; display: inline-block; background-color: <?=$it->color?>"></span></td>
                                             <td><?=$it->size?></td>
                                             <td><?=$it->qty?></td>
                                             <td><?=number_format($it->amount)?></td>
