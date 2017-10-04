@@ -73,7 +73,7 @@
                                     <td><?php echo $it->name ?></td>
                                     <td><?php echo number_format($it->amount) ?></td>
                                     <td><?php echo $it->payment ?></td>
-                                    <td><?php echo date("d-m-Y",strtotime($it->created)) ?></td>
+                                    <td><?php echo date("Y-m-d H:i:s",strtotime($it->created)) ?></td>
                                     <td><?php echo $it->status ? "<span style='color: #008d4c'>Đã xử lý</span>" : "<a href='".base_url("admin/transaction/handlingTransaction/".$it->id)."'><span style='color: #005ecf'>Chờ xử lý</span></a>"?></td>
                                     <td>
                                         <a href="<?php echo base_url("admin/transaction/delete/".$it->id)?>" title="Xóa" class="req"><span class="fa fa-remove"></span></a><span class="separate">|</span>

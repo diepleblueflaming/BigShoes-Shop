@@ -34,7 +34,7 @@
                                         <tr role="row" id="rows_<?php echo $it->id?>" class="tr_checxk">
                                             <td><?php echo $it->id ?></td>
                                             <td>
-                                                <?=show_img($it->image)?><br>
+                                                <?=show_img("/product/".$it->image)?><br>
                                                 <?=$it->product_name?>
                                             </td>
                                             <td><?=$it->color?></td>
