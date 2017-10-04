@@ -166,8 +166,7 @@
                                             <p><b>Số Lượng: </b><?=$cart['qty']?></p>
                                             <div class="color_container">
                                                 <div class="label-text">Màu Sắc </div>
-                                                <span  class="color" style="background-color: <?=$cart["options"]["color"]->name?>">
-                                                ></span>
+                                                <span  class="color" style="background-color: <?=$cart["options"]["color"]->name; ?>"></span>
                                             </div>
                                             <div class="size_container">
                                                 <div class="label-text">Kích Thước </div>
