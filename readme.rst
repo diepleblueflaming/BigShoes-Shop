@@ -1,10 +1,13 @@
 - Web bán giầy online BigShoes
 - Link demo : http://diepledev.tk
+- Link phần  qtrị : http://diepledev.tk/admin/
+    + account : customer@gmail.com.
+    + password : customer.
 
 - Người dùng : 
     + Giao diện :
-        Đơn giản, đẹp mắt
-        Response trên laptop, tablet, mobile.
+        - Đơn giản, đẹp mắt
+        - Response trên laptop, tablet, mobile.
     + Chức năng : 
         - Xem các sản phẩm giày, các  bài viết về xu hướng giày dép.
         - Bình luận về các sản phẩm.
